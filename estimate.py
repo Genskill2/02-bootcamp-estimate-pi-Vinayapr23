@@ -39,17 +39,17 @@ def wallis(n):
      return pi
  
 def monte_carlo(n):
-     circle = 0
-     square =0
-     for i in range(n):
-      x=random.random()
-      y=random.random()
-      distance=x**2+y**2
-      if distance<=1:
-       circle=circle+1
-     square=square+1
+ circle = 0
+ square =0
+ for i in range(1,n):
+  x=random.random()
+  y=random.random()
+  distance=x**2+y**2
+  if distance<=1:
+   circle=circle+1
+  square=square+1
   
-     pi=float(4*circle/square)
-     return pi
+ pi=float(4*circle/square)
+ return pi
     
     

@@ -31,14 +31,14 @@ class TestMC(unittest.TestCase):
     
 if __name__ == "__main__":
     unittest.main()
-    def wallis(n):
+def wallis(n):
      pi=2;
      for i in range(1,n):
       value=float(4*i**2/(4*i**2-1))
       pi=pi*value
      return pi
  
-    def monte_carlo(n):
+def monte_carlo(n):
      circle = 0
      square =0
      for i in range(n):
@@ -51,4 +51,5 @@ if __name__ == "__main__":
   
      pi=float(4*circle/square)
      return pi
+    
     
